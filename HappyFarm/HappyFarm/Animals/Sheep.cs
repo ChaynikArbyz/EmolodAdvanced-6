@@ -37,8 +37,8 @@ namespace HappyFarm.Animals
                     else
                     {
                         isProducted = true;
-                        daysToCollect = 0;
                         daysNotHungry = 0;
+                        daysToCollect = 0;
                         return 10;
                     }
                 }

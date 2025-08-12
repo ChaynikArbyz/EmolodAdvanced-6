@@ -18,9 +18,15 @@ namespace HappyFarm
             Console.InputEncoding = Encoding.Unicode;
             Console.OutputEncoding = Encoding.Unicode;
 
+            for (int i = 0; i < 50; i++)//цикл на 50 днів
+            {
+                farm.FeedAllAnimals(999);
+                farm.CollectAllProduct();
+                farm.StartNextDay();
+            }
+
             bool Running = true;
             bool invalidInput = false;
-
 
             while (Running)
             {
